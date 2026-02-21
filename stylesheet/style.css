@@ -1,0 +1,368 @@
+/* glabal styling */
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    font-family: cursive;
+color:black;
+}
+h3{
+    font-size: 48px;
+    line-height: 48px;
+    color:black;
+    font-family: cursive;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color:black;
+    font-family: cursive;
+}
+h4{
+    font-size: 20px;
+    color:black;
+    font-family: cursive;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+    font-family: cursive;
+}
+p{
+    font-size: 16px;
+    color:rgb(32, 30, 30);
+    font-family:cursive;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px o;
+}
+body{
+    width: 100%;
+    background-color: #ece9e2;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+button.normal{
+    font-size:14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: #ffff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    font-family: cursive;
+}
+/* global styling */
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #fff;
+    box-shadow: opx 5px 15px rgba(22, 21, 21, 0.06) ;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight:700;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 0.5s ease;
+}
+#navbar li{
+    list-style:none;
+    padding: 0px 20px;
+    position: relative;
+}
+#navbar li a:hover{
+color: red;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color: red;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"" ;
+    width: 30%;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#navbar li a:hover{
+    after
+}
+
+.logo{
+
+    height: 80px; 
+}
+
+
+#mainpicture{
+
+    padding: 100px;
+}
+#mainpicture h4{
+padding-bottom: 15px;
+
+}
+#mainpicture h1{
+    color: red;
+}
+#mainpicture button:hover{
+    background-color: red;
+    color: #ffff;
+}
+#mainpicture{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#shoe{
+    height: 600px;
+}
+#offers .ofbox{
+width: 180px;
+text-align: center;
+padding: 25px 15px;
+box-shadow: 20px 20px 34px rgb(0,0,0,0.03);
+border: 2px solid #ffff;
+border-radius: 4px;
+margin: 15px 0;
+}
+#offers{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: center;
+}
+#offers .ofbox:hover{
+    box-shadow: 10px 10px 54px rgb(70,62,222,0.3);
+}
+#offers .ofbox h6{
+    display: inline-block;
+    padding: 9px 8px 8px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: black;
+    background-color: #ffff;
+}
+#offers .ofbox:nth-child(odd){
+    background-color: #ece9e2;
+}
+#offers .ofbox:nth-child(even){
+    background-color: #ece9e2;
+}
+#display{
+    text-align: center;
+}
+#display .products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    
+}
+/* box around items */
+#display .pro{
+    width: 20%;
+    min-width: 250px;
+    padding: 15px 7px 0;
+    border: 0.5px solid #fff;
+     border-radius: 20px;
+     cursor: pointer;
+     box-shadow:20px 20px 50px rgb(0,0,0,0.03);
+     margin: 15px 0;
+     position: relative;
+     background-color:#ece9e2;
+}
+#display .pro:hover{
+    box-shadow:20px 20px 20px rgba(179, 178, 210, 0.3);
+}
+#display .pro img{
+    width: 80%;
+    border-radius: 20px;
+    background-color:#fff
+}
+#display .pro .des{
+    text-align:start;
+    padding: 8px 0;
+}
+#display .pro .des span{
+    color: #7b7b7f;
+    font-size: 12px;
+    font-weight: bold;
+}
+#display .pro .des h5{
+    font-weight: bold;
+    font-size: 15px;
+}
+#display .pro .des h4{
+    font-size: 15px;
+    font-weight:bold ;
+    color: black;
+}
+#display .pro .des button{
+    text-decoration: none;
+    border-radius: 50px;
+    width: 40px;
+    height: 30px;
+    background-color: #ece9e2;
+    border: none;
+    position: absolute;
+    bottom: 43px;
+    right: 10px;
+
+}
+#banner,#banner2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+#banner h4 ,#banner2 h4{
+    font-size: 20px;
+    letter-spacing: 2em;
+    text-align: center;
+    color: #ffff;
+}
+#banner h2,#banner2 h2{
+    padding: 10px 0;
+    color:#ffff;
+
+}
+#banner span{
+    color: red;
+}
+#banner button,#banner2 button{
+    margin-bottom: 50px;
+}
+#banner button:hover{
+    background-color: red;
+    color: #ffff;
+}
+#banner2 button:hover{
+    background-color: red;
+    color: #ffff;
+}
+#banner3{
+    display: flex;
+    padding:0 20em;
+    align-items: center;
+    
+    
+
+}
+#banner3 h4{
+    color: #fff;
+    font-weight: 900;
+    font-family: cursive;
+    font-size: 30px;
+
+}
+#banner3 p{
+    color: #fafafa;
+    font-weight: 600;
+    font-family: cursive;
+    font-size: 14px;
+
+}
+#banner3 p span{
+    color:red;
+    font-weight: 600;
+    font-family: cursive;
+    font-size: 14px;
+
+}
+#banner3 .form{
+    display: flex;
+    width: 40px;
+}
+#banner3 input{
+    height: 3.2rem;
+    padding: 0 5em;
+}
+    
+#banner3 button{
+    
+    background-color: #ece9e2;
+    
+}
+
+footer img{
+    height: 50px;
+
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+footer .col{
+    flex-direction: column;
+    display: flex;
+   align-items: flex-start;
+   margin-bottom: 10px;
+    
+}
+footer.logoft{
+    margin-bottom: 30px;
+
+}
+footer h4{
+    font-size: 14px;
+    
+
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color:black;
+    margin-bottom: 10px;
+}
+footer .socials{
+    margin-top: 20px;
+
+}
+footer.socials i{
+    color: grey;
+    padding-right: 4px;
+    cursor: pointer;
+    transition: 0.3ms ease;
+}
+footer .socials i:hover ,
+footer a:hover{
+    color: red;
+
+}
+footer .copyright{
+    text-align: center;
+    width: 100%;
+}
