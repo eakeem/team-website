@@ -22,6 +22,9 @@ h4{
     color:black;
     font-family: cursive;
 }
+h5, span{
+    font-family: cursive;
+}
 h6{
     font-weight: 700;
     font-size: 12px;
@@ -84,7 +87,7 @@ button.normal{
     font-weight:700;
     color: black;
     font-family: cursive;
-    transition: 0.5s ease;
+    transition: 0.2s ease;
 }
 #navbar li{
     list-style:none;
@@ -142,38 +145,17 @@ padding-bottom: 15px;
 #shoe{
     height: 600px;
 }
-#offers .ofbox{
-width: 180px;
-text-align: center;
-padding: 25px 15px;
-box-shadow: 20px 20px 34px rgb(0,0,0,0.03);
-border: 2px solid #ffff;
-border-radius: 4px;
-margin: 15px 0;
-}
+
 #offers{
     display: flex;
     justify-content: space-between;
     background-color: #fff;
     align-items: center;
+    
 }
-#offers .ofbox:hover{
-    box-shadow: 10px 10px 54px rgb(70,62,222,0.3);
-}
-#offers .ofbox h6{
-    display: inline-block;
-    padding: 9px 8px 8px 8px;
-    line-height: 1;
-    border-radius: 4px;
-    color: black;
-    background-color: #ffff;
-}
-#offers .ofbox:nth-child(odd){
-    background-color: #ece9e2;
-}
-#offers .ofbox:nth-child(even){
-    background-color: #ece9e2;
-}
+
+
+
 #display{
     text-align: center;
 }
@@ -200,9 +182,10 @@ margin: 15px 0;
     box-shadow:20px 20px 20px rgba(179, 178, 210, 0.3);
 }
 #display .pro img{
-    width: 80%;
+    width: 200px;
+    height: 200px;
     border-radius: 20px;
-    background-color:#fff
+    background-color:#eae8e5
 }
 #display .pro .des{
     text-align:start;
@@ -222,7 +205,7 @@ margin: 15px 0;
     font-weight:bold ;
     color: black;
 }
-#display .pro .des button{
+#display .pro .des a{
     text-decoration: none;
     border-radius: 50px;
     width: 40px;
@@ -230,9 +213,14 @@ margin: 15px 0;
     background-color: #ece9e2;
     border: none;
     position: absolute;
-    bottom: 43px;
+    bottom: 20px;
     right: 10px;
+    transition: 0.2s ease;
 
+}
+#display .pro .des a:hover{
+ color: red;
+ 
 }
 #banner,#banner2 {
     display: flex;
@@ -272,6 +260,7 @@ margin: 15px 0;
     display: flex;
     padding:0 20em;
     align-items: center;
+    background-color: rgb(17, 17, 113);
     
     
 
