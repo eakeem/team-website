@@ -20,3 +20,18 @@ smallimg[4].onclick=function(){
   Mainimage.src= smallimg[4].src;  
 }
 
+
+
+    // Get elements
+    const badge = document.getElementById('notificationCount');
+    const button = document.getElementById('addNotification');
+
+    // Initialize count
+    let count = 0;
+
+    // Add click event
+    button.addEventListener('onclick', () => {
+        count++;
+        badge.textContent = count;
+    });
+

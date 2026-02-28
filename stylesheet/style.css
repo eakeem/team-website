@@ -418,4 +418,12 @@ margin-top: 5%;
     font-size: 16px;
     margin-right: 10px;
 }
-
+.badge{
+    position: absolute;
+   right: -1px;
+   top: -10px;
+    font-size: 12px;
+}
+.icon{
+position: relative;
+}
