@@ -67,12 +67,29 @@ button.normal{
     align-items: center;
     padding: 20px 100px;
     background-color: #fff;
-    box-shadow: opx 5px 15px rgba(22, 21, 21, 0.06) ;
-    position: sticky;
-    top: 0;
-    left: 0;
+    box-shadow: opx 10px 30px #00000044 ;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    width: 90%;
+    max-width: 1100px;
+    transform: translate(-50px);
     z-index: 999;
+    border-radius: 50px;
+    backdrop-filter: blur(15px);
+    animation: anime 0.5s ease forwards;
 
+
+}
+@keyframes anime{
+    from{
+        opacity: 0;
+        transform: translate(-50%, -40px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(-50%,0);
+    }
 }
 #navbar{
     display: flex;
@@ -177,9 +194,11 @@ padding-bottom: 15px;
      margin: 15px 0;
      position: relative;
      background-color:#ece9e2;
+     transition: 400ms;
 }
 #display .pro:hover{
     box-shadow:20px 20px 20px rgba(179, 178, 210, 0.3);
+    transform: scale(1.1,1.1);
 }
 #display .pro img{
     width: 200px;
@@ -427,3 +446,68 @@ margin-top: 5%;
 .icon{
 position: relative;
 }
+/* call to action add end of index page */
+#sm-banner .banner-box, .banner-box1{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+}
+#sm-banner h4{
+    color: #fff;
+   font-weight: 10;
+    font-size: 20px;
+    padding-left: 30px;
+}
+#sm-banner h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 800;
+    padding-left: 30px;
+}
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 30px;
+
+}
+#sm-banner button{
+    margin-left: 30px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid;
+    transition: 10ms ease-in;
+}
+#sm-banner button:hover{
+    color: white;
+    background-color: red;
+}
+#pm-banner{
+    display: flex;
+    justify-content: space-between;
+}
+#pm-banner button{
+    
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid;
+    transition: 10ms ease-in;
+}
+#pm-banner span{
+    color: #fff;
+    padding-left: 50px;
+}
+#pm-banner .banner-box4,.banner-box3,.banner-box2{
+    padding-top: 100px;
+}
+#pm-banner button:hover{
+    color: white;
+    background-color: red;
+
+
