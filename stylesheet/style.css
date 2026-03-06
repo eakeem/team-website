@@ -2,39 +2,56 @@
 h1{
     font-size: 50px;
     line-height: 64px;
-    font-family: cursive;
+    font-family: lato;
 color:black;
 }
 h3{
     font-size: 48px;
     line-height: 48px;
     color:black;
-    font-family: cursive;
+    font-family: lato;
 }
 h2{
     font-size: 46px;
     line-height: 54px;
     color:black;
-    font-family: cursive;
+    font-family: lato;
 }
 h4{
     font-size: 20px;
     color:black;
-    font-family: cursive;
+    font-family: lato;
 }
 h5, span{
-    font-family: cursive;
+    font-family: lato;
 }
 h6{
     font-weight: 700;
     font-size: 12px;
-    font-family: cursive;
+    font-family: lato;
 }
 p{
     font-size: 16px;
     color:rgb(32, 30, 30);
-    font-family:cursive;
+    font-family:lato;
 }
+a{
+    font-family: lato;
+}
+p{
+    font-family: lato;
+}
+span{
+    font-family: lato;
+
+}
+strong{
+    font-family: lato;
+}
+td,tr,li{
+    font-family: lato;
+}
+
 .section-p1{
     padding: 40px 80px;
 }
@@ -58,7 +75,7 @@ button.normal{
     border: none;
     outline: none;
     transition: 0.3s;
-    font-family: cursive;
+    font-family: lato;
 }
 /* global styling */
 #header{
@@ -103,7 +120,7 @@ button.normal{
     font-size: 16px;
     font-weight:700;
     color: black;
-    font-family: cursive;
+    font-family: lato;
     transition: 0.2s ease;
 }
 #navbar li{
@@ -168,6 +185,7 @@ padding-bottom: 15px;
     justify-content: space-between;
     background-color: #fff;
     align-items: center;
+    margin-top: 150px;
     
 }
 
@@ -216,7 +234,7 @@ padding-bottom: 15px;
     font-weight: bold;
 }
 #display .pro .des h5{
-    font-weight: lighter;
+    font-weight: light;
     font-size: 12px;
 }
 #display .pro .des h4{
@@ -302,7 +320,7 @@ padding-bottom: 15px;
 #banner3 p span{
     color:red;
     font-weight: 600;
-    font-family: cursive;
+    font-family: lato;
     font-size: 14px;
 
 }
@@ -387,7 +405,7 @@ footer .copyright{
     font-weight: 700;
     background-color: #fff;
     border-radius: 10px;
-    font-family: cursive;
+    font-family: lato;
 }
 /* styling for single product page */
 #prodetails{
@@ -446,6 +464,79 @@ margin-top: 5%;
 .icon{
 position: relative;
 }
+/* on cart page  */
+.payment{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0 ;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 6px -7px 46px 10px rgba(66, 68, 90, 1);
+-moz-box-shadow: 6px -7px 46px 10px rgba(66, 68, 90, 1);
+box-shadow: 6px -7px 46px 10px rgba(66, 68, 90, 1);
+z-index:9999 ;
+}
+.payTitle{
+    font-size: 20px;
+    color: lightgrey;
+
+}
+label{
+    font-size: 14px;
+    font-weight: 300;
+}
+.payInput{
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+.payInput::placeholder{
+    color: lightgray;
+}
+.cardInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.payInputsm{
+    width: 30%;
+}
+.payButton{
+    position: absolute;
+    height: 40px;
+    bottom: -40px;
+    width: 100%;
+    left: 0;
+    background-color: #369e62;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.close{
+    width: 20px;
+    height: 2opx;
+    position: absolute;
+    background-color:grey;
+    color: #fff;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+}
+/* on cart page */
+
+
 /* call to action add end of index page */
 #sm-banner .banner-box, .banner-box1{
 display: flex;
@@ -509,5 +600,157 @@ align-items: flex-start;
 #pm-banner button:hover{
     color: white;
     background-color: red;
+}
+
+/* contact us page */
 
 
+#contactDetails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 10% 10% 0 10%;
+}
+#contactDetails .details{
+    width: 40%;
+}
+#contactDetails .details span,
+#formDetails form span{
+    font-size: 12px;
+}
+#contactDetails .details h2,
+#formDetails form h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+#contactDetails .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+}
+#contactDetails .details li i{
+    font-size: 20px;
+    padding-right: 22px;
+}
+#contactDetails .details li p{
+    margin: 0;
+    font-size: 14px;
+}
+#contactDetails .details .map{
+    width: 55%;
+    height: 400px;
+
+}
+#contactDetails .details .map iframe{
+    width: 100%;
+    height: 100%;
+    
+}
+#formDetails form{
+width: 65%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+}
+#formDetails form input,
+#formDetails form  textarea{
+    width: 90%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+}
+#formDetails {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* cart page */
+#cartpg table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    margin-top: 100px;
+}
+#cartpg table img{
+    width: 70px;
+}
+#cartpg table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+#cartpg table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+#cartpg table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+#cartpg table td:nth-child(4),
+#cartpg table td:nth-child(5),
+#cartpg table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+#cartpg table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+#cartpg table thead{
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+}
+#cartpg table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+#cartpg table tbody td tr{
+padding-top: 15px;
+}
+#cartpg table tbody td{
+    font-size: 13px;
+}
+#cartAdd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#total{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #fff;
+    padding: 30px;
+}
+#total table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+#total table td{
+    width: 50%;
+    border: 1px solid #fff;
+    padding: 10PX ;
+    font-size: 13PX;
+}
+#total h3{
+    padding-bottom: 15px;
+}
+#total button{
+    background-color:#369e62;
+    color: #fff;
+    padding: 12px 20px;
+}
+#cartpg{
+    overflow-x: auto;
+}

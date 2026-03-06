@@ -22,16 +22,14 @@ smallimg[4].onclick=function(){
 
 
 
-    // Get elements
-    const badge = document.getElementById('notificationCount');
-    const button = document.getElementById('addNotification');
 
-    // Initialize count
-    let count = 0;
 
-    // Add click event
-    button.addEventListener('onclick', () => {
-        count++;
-        badge.textContent = count;
-    });
+
+
+
+
+
+
+
+
 

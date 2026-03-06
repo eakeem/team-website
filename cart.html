@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="stylesheet/style.css">
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 
 </style>
@@ -29,7 +31,82 @@
 
         </div>
         </section>
- 
+  <div class="payment">
+        <h1 class="payTitle">Personal information</h1>
+        <label>First Name and Surname</label>
+        <input type="text" placeholder="John Doe" class="payInput">
+        <label>Phone Number</label>
+        <input type="text" placeholder="+1 234-5678" class="payInput">
+        <label>Address</label>
+        <input type="text" placeholder="Lot 5 Main st Ocho Rios " class="payInput">
+        <h1 class="payTitle">Card Information</h1>
+        <div class="cardIcons">
+            <img src="image/payments.png" width="40" alt="" class="cardIcon">
+        </div>
+        <input type="password" class="payInput" placeholder="Card Number">
+        <div class="cardInfo">
+            <input type="text" placeholder="mm" class="payInputsm">
+            <input type="text" placeholder="yyyy" class="payInputsm">
+            <input type="text" placeholder="cvc" class="payInputsm">
+            <span class="close">X</span>
+
+        </div>
+        <button class="payButton">Check Out</button>
+    </div>
+    <section id="cartpg"  class="section-p1" >
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Item</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa-solid fa-trash"></i></td>
+                    <td><img src="image/products/sneaker6.png"></td>
+                    <td>add text here</td>
+                    <td>jmd $7500.00</td>
+                    <td><input type="number" value="1" ></td>
+                    <td>jmd $7500.00</td>
+                </tr>
+                <tr>
+                    <td><i class="fa-solid fa-trash"></i></td>
+                    <td><img src="image/products/sneaker5.png"></td>
+                    <td>add text here</td>
+                    <td>jmd $15000.00</td>
+                    <td><input type="number" value="3" ></td>
+                    <td>jmd $45,000.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="cartAdd">
+        <div id="total">
+            <h3>Cart totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Total</td>
+                    <td>Jmd $35000.00</td>
+
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>Jmd $35000.00</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
 
 
 <section id="banner3" class="section-p1" class="section-m1">
