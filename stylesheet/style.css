@@ -48,7 +48,13 @@ span{
 strong{
     font-family: lato;
 }
-td,tr,li{
+td,{
+    font-family: lato;
+}
+tr{
+    font-family: lato;
+}
+li{
     font-family: lato;
 }
 
@@ -306,14 +312,14 @@ padding-bottom: 15px;
 #banner3 h4{
     color: #fff;
     font-weight: 900;
-    font-family: cursive;
+    
     font-size: 30px;
 
 }
 #banner3 p{
     color: #fafafa;
     font-weight: 600;
-    font-family: cursive;
+    
     font-size: 14px;
 
 }
@@ -680,6 +686,7 @@ align-items: flex-start;
 }
 #cartpg table img{
     width: 70px;
+    border: 1px solid #fff;
 }
 #cartpg table td:nth-child(1){
     width: 100px;
