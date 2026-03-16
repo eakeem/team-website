@@ -171,7 +171,9 @@ color: red;
 
 .logo{
 
-    height: 80px; 
+    height: 60px; 
+   
+    
 }
 
 
@@ -415,7 +417,7 @@ footer .copyright{
     text-align: center;
     width: 100%;
 }
-/* styling for shop page */
+/* styling for shop page  pignation*/
 #pagination{
     text-align: center;
 }
@@ -428,6 +430,21 @@ footer .copyright{
     border-radius: 10px;
     font-family: lato;
 }
+#pagination a:hover,
+#pagination  a.active{
+    color: red;
+}
+#pagination a.active::after,
+#pagination  a:hover::after{
+    
+    width: 30%;
+    height: 2px;
+    background: red;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
 /* styling for single product page */
 #prodetails{
     display: flex;
