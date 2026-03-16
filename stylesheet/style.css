@@ -777,6 +777,44 @@ padding-top: 15px;
     overflow-x: auto;
 }
 /* policy page */
+.pol{
+     align-items: center;
+    justify-content: center;
+    width: 50%;
+    border: 1px solid #fff;
+    margin: 150px 80px;
+}
+/* accessibility page */
+.access{
+     align-items: center;
+    justify-content: center;
+    width: 50%;
+    border: 1px solid #fff;
+    margin: 150px 80px;
+
+}
+/* terms and condition page */
+.terms{
+     align-items: center;
+    justify-content: center;
+    width: 50%;
+    border: 1px solid #fff;
+    margin: 150px 80px;
+
+}
+/* credits page */
+
+.credits{
+     align-items: center;
+    justify-content: center;
+    width: 50%;
+    border: 1px solid #fff;
+    margin: 150px 80px;
+
+}
+
+
+/* delivery page */
 .Policy{
     margin: 150px 80px;
 }
