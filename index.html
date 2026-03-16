@@ -18,7 +18,7 @@
 
 <style>#banner{
     background-image: url("image/pointing.jpg");
-    width: 100vw;
+    width: 100%;
     height: 40vh;
     background-size: cover;
     background-position: center;
@@ -63,7 +63,7 @@
 
 }</style>
 <style>.banner-box3{
-    background-image: url("image/banner/action3.jpg");
+    /* background-image: url("image/banner/action3.jpg"); */
     width: 30%;
     height: 30vh;
     background-size: cover;
@@ -87,6 +87,11 @@
         <a href="#"><img src="image/vecteezy_denim-shorts-isolated-on-a-transparent-background_21597082.png.crdownload" class="logo" alt="logo"></a>
         <div>
             <ul id="navbar">
+                <form>
+                    
+                    <input type="text" placeholder="search" class="searchBar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="About.html">About</a></li>
@@ -386,7 +391,7 @@
         <p>Get email Updates about our lates offers and <span>exclusive deals.</span>.</p>
     </div>
     <div class="form"><input type="email" placeholder="johndoe@gamil.com">
-    <button class="normal">Submit</button>
+    <button id="email"  onclick="emailnews()" class="normal">Submit</button>
     </div>
     
 </section>
@@ -410,11 +415,11 @@
     </div>
     <div class="col">
         <h4>Legal</h4>
-        <a href="#">About us</a>
-        <a href="#">Privacy Policy</a>
+        <a href="about.html">About us</a>
+        <a href="policy.html">Privacy Policy</a>
         <a href="#">Terms & Conditions</a>
-        <a href="#">Delivery information</a>
-        <a href="#">Contact us</a>
+        <a href="delivery.html">Delivery information</a>
+        <a href="contact.html">Contact us</a>
         <a href="#">Credits</a>
         <a href="#">Accesibilty Statment</a>
     </div>
@@ -423,7 +428,7 @@
         <a href="#">Sign in</a>
         <a href="#">Sign up</a>
         <a href="#">Track Order</a>
-        <a href="#">Cart</a>
+        <a href="cart.html">Cart</a>
         
     </div>
     <div class="pay">
@@ -436,9 +441,10 @@
 </footer>
 
  
-<script>
+
     
    
+
 
 
 

@@ -66,13 +66,13 @@ li{
     padding: 40px 80px;
 }
 .section-m1{
-    margin: 40px o;
+    margin: 40px 0;
 }
 body{
-    width: 100%;
+    
     background-color: #ece9e2;
     overflow-y: auto;
-    overflow-x: hidden;
+    
 }
 button.normal{
     font-size:14px;
@@ -155,8 +155,18 @@ color: red;
     bottom: -4px;
     left: 20px;
 }
-#navbar li a:hover{
-    after
+#navbar form{
+    
+    padding-right: 200px;
+}
+.searchBar{
+    outline: none;
+    background-color: #ece9e2;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: none;
+    width: 300px;
+    height: 25px;
 }
 
 .logo{
@@ -281,7 +291,7 @@ padding-bottom: 15px;
 }
 #banner h4 ,#banner2 h4{
     font-size: 20px;
-    letter-spacing: 2em;
+    letter-spacing: 1em;
     text-align: center;
     color: #ffff;
 }
@@ -309,7 +319,8 @@ padding-bottom: 15px;
     padding:0 20em;
     align-items: center;
     background-color: rgb(17, 17, 113);
-    
+    width: 100%;
+    box-sizing: border-box;
     
 
 }
@@ -765,3 +776,15 @@ padding-top: 15px;
 #cartpg{
     overflow-x: auto;
 }
+/* policy page */
+.Policy{
+    margin: 150px 80px;
+}
+#polDoc{
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    border: 1px solid #fff;
+    
+}
+
