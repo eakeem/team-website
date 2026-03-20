@@ -161,6 +161,7 @@ color: red;
 .srcform{
     
     display: flex;
+    padding-top: 11px;
   
 }
 
@@ -171,8 +172,7 @@ color: red;
     border-radius: 10px;
     box-sizing: border-box;
     border: none;
-    width: 300px;
-    height: 25px;
+    height: 5px;
 }
 
 .logo{
@@ -913,6 +913,19 @@ b{
   cursor: pointer;
   width: 100%;
 }
+ .subtn1{
+    background-color: #04AA6D;
+  color: white;
+  padding: 14px 27px;
+  margin: 8px 35px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  
+ }
+ .subtn1:hover{
+    opacity: 0.8;
+ }
 
 .subtn :hover {
   opacity: 0.8;
@@ -1057,17 +1070,31 @@ input[type=text]:focus, input[type=password]:focus {
 .cancelbtn2 {
   padding: 14px 20px;
   background-color: #f44336;
+  cursor: pointer;
 }
 
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn2, .signupbtn {
   float: left;
   width: 50%;
+  
 }
+.signupbtn{
+     padding: 14px 0px;
+     background-color: #04AA6D;
+     cursor: pointer;
+}
+.signupbtn:hover{
+   opacity: 0.9;
+}
+.cancelbtn2:hover{
+    opacity: 0.9;
+}
+
 
 /* Add padding to container elements */
 .container2 {
-  padding: 16px;
+  padding: 15px;
 }
 
 /* The Modal (background) */
@@ -1077,11 +1104,12 @@ input[type=text]:focus, input[type=password]:focus {
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
+  
   width: 30%; /* Full width */
   height: 30%; /* Full height */
   overflow: none; /* Enable scroll if needed */
-  
-  padding-top: 50px;
+ 
+  /* padding-top: 0px; */
 }
 
 /* Modal Content/Box */

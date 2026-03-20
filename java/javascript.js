@@ -23,11 +23,6 @@ smallimg[4].onclick=function(){
 
 
 
-const user = document.getElementsByClassName('user');
-const element = document.getElementsByClassName('subMenu');
-user.addEventListener('click',()=>{
-  element.classList.toggle('hidden');
-});
 
 
 
@@ -75,6 +70,11 @@ window.onclick = function(event) {
     modal2.style.display = "none";
   }
 }
+
+
+
+
+
 
 
 
