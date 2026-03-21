@@ -549,75 +549,10 @@ margin-top: 5%;
 position: relative;
 }
 /* on cart page  */
-.payment{
-    width: 500px;
-    height: 500px;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right:0 ;
-    margin: auto;
-    padding: 10px 50px;
-    display: none;
-    flex-direction: column;
-    -webkit-box-shadow: 6px -7px 46px 10px rgba(66, 68, 90, 1);
--moz-box-shadow: 6px -7px 46px 10px rgba(66, 68, 90, 1);
-box-shadow: 6px -7px 46px 10px rgba(66, 68, 90, 1);
-z-index:9999 ;
-}
-.payTitle{
-    font-size: 20px;
-    color: lightgrey;
-
-}
-label{
-    font-size: 14px;
-    font-weight: 300;
-}
-.payInput{
-    padding: 10px;
-    margin: 10px 0px;
-    border: none;
-    border-bottom: 1px solid grey;
-}
-.payInput::placeholder{
-    color: lightgray;
-}
-.cardInfo{
-    display: flex;
-    justify-content: space-between;
-}
-.payInputsm{
-    width: 30%;
-}
-.payButton{
-    position: absolute;
-    height: 40px;
-    bottom: -40px;
-    width: 100%;
-    left: 0;
-    background-color: #369e62;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-.close{
-    width: 20px;
-    height: 2opx;
-    position: absolute;
-    background-color:grey;
-    color: #fff;
-    top: 10px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
 
 
-}
+
+
 /* on cart page */
 
 
