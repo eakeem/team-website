@@ -290,7 +290,8 @@ padding-bottom: 15px;
     width: 200px;
     height: 200px;
     border-radius: 20px;
-    background-color:#eae8e5
+    background-color:#eae8e5;
+    
 }
 #display .pro .des{
     text-align:start;
@@ -322,6 +323,9 @@ padding-bottom: 15px;
     right: 10px;
     transition: 0.2s ease;
 
+}
+#display .pro .des i{
+    color: rgb(33, 2, 102);
 }
 #display .pro .des a:hover{
  color: red;
@@ -494,7 +498,7 @@ footer .copyright{
 /* styling for single product page */
 #prodetails{
     display: flex;
-    margin-top: 20px;
+    margin-top: 70px;
     
 
 } 
@@ -871,6 +875,7 @@ b{
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
+  border: none;
 }
 
 /* Center the image and position the close button */
@@ -994,11 +999,11 @@ input[type=text]:focus, input[type=password]:focus {
   border: none;
   cursor: pointer;
   width: 100%;
-  opacity: 0.9;
+  
 }
 
 .btn2:hover {
-  opacity:1;
+  opacity: 0.7;
 }
 
 /* Extra styles for the cancel button */
@@ -1006,6 +1011,7 @@ input[type=text]:focus, input[type=password]:focus {
   padding: 14px 20px;
   background-color: #f44336;
   cursor: pointer;
+  border: none;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -1018,6 +1024,7 @@ input[type=text]:focus, input[type=password]:focus {
      padding: 14px 0px;
      background-color: #04AA6D;
      cursor: pointer;
+     border: none;
 }
 .signupbtn:hover{
    opacity: 0.9;
