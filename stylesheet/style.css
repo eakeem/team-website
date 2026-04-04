@@ -5,6 +5,7 @@
 }
 body{
     min-height: 100vh;
+    overflow: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -113,6 +114,7 @@ button.normal{
     /* border-radius: 50px; */
     backdrop-filter: blur(15px);
     animation: anime 0.5s ease forwards;
+    overflow: hidden;
 }
 @keyframes anime{
     from{
@@ -129,7 +131,7 @@ button.normal{
     right: 0;
     top: 0;
     height:100vh;
-    width: 250px;
+    width: 100%;
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.586);
     backdrop-filter: blur(10PX);
@@ -289,6 +291,7 @@ padding-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    overflow: hidden;
 }
 #shoe{
     height: 600px;
@@ -300,6 +303,7 @@ padding-bottom: 15px;
     background-color: #fff;
     align-items: center;
     margin-top: 150px;
+    overflow: hidden;
     
 }
 
