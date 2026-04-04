@@ -1406,7 +1406,7 @@ hr {
 }
 #mainpicture {
     gap: 5px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
    /*  margin: 35px 0px -74px 0px; */
     display: grid;
     flex-wrap: nowrap;
