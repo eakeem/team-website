@@ -1435,7 +1435,7 @@ hr {
 }
 #pm-banner {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     
 }
 .banner-box4 {
