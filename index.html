@@ -82,296 +82,53 @@
 
 
 }</style>
-<!-- <link rel="stylesheet" href="stylesheet/bootstrap.min.css"> -->
+
 
 </head>
 <body>
-    <section id="header">
-       
-         <ul class="sidebar">
-                
-             
-            <li onclick= hideSidebar() > <a href="#"><i class="fa-solid fa-x"></i></a> </li>
-            <form class="srcform">
-                    
-                    <input type="text" placeholder="search" class="searchBar">
-                     <a class="srcformIcon"> <i class="fa-solid fa-magnifying-glass"></i></a>
-                </form>    
-            <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                
-                      
-                    
-                    
-                   <div class="dropdown">
-                     <li><a onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-user"></i></a></li>
-                     <div id="myDropdown" class="dropdown-content">
-                       
-                        <button class="subtn1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <img src="image/4S Fashion logo3.png" alt="" width="50px">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">shop</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="cart.html">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
-                    <div id="id01" class="modal">
-  
-                      <form class="modal-content animate" action="/action_page.php" method="post">
-                          <div class="imgcontainer">
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                            <img src="image/person.png" alt="Avatar" class="avatar">
-                          </div>
 
-                         <div class="container">
-                            <label for="uname"><b>Username</b></label>
-                            <input type="text" placeholder="Enter Username" name="uname" required>
-
-                             <label for="psw"><b>Password</b></label>
-                             <input type="password" placeholder="Enter Password" name="psw" required>
-        
-                             <button class="subtn" type="submit">Login</button>
-                            <label>
-                               <input type="checkbox" checked="checked" name="remember"> <p><b>Remember me</b></p>
-                            </label>
-                         </div>
-
-                         <div class="container" style="background-color:#f1f1f1">
-                           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                           <span class="psw"><a href="#">Forgot password?</a></span>
-                         </div>
-                        </form>
-                   </div>
-                   
-                         <button class="btn2" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
-
-                          <div id="id02" class="modal2">
-                              <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal2">&times;</span>
-                             <form class="modal2-content2" action="/action_page.php">
-                              <div class="container2">
-                                 <h4>Sign Up</h4>
-                                 <p>Please fill in this form to create an account.</p>
-                                 <hr>
-                                <label for="email"><b>Email</b></label>
-                                  <input type="text" placeholder="Enter Email" name="email" required>
-
-                                  <label for="psw"><b>Password</b></label>
-                                  <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                 <label for="psw-repeat"><b>Repeat Password</b></label>
-                                 <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-                                <label>
-                                   <input type="checkbox" checked="checked" name="remember" > Remember me
-                                </label>
-
-                                  <p>By creating an account you agree to our <a href="terms.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-                                <div class="clearfix2">
-                                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
-                                  <button type="submit" class="signupbtn">Sign Up</button>
-                               </div>
-                             </div>
-                            </form>
-                        </div>
-
-                   </div>
-                   
-    
-                 </div>
-
-                     
-    
-             
-
-                
-                
-                
-            </ul>
-            <ul id="navbar">
-                 
-                <!-- <form class="srcform">
-                    
-                    <input type="text" placeholder="search" class="searchBar">
-                     <a class="srcformIcon"> <i class="fa-solid fa-magnifying-glass"></i></a>
-                </form>
-               -->
-                <li><a href="#"><img src="image/4S Fashion logo3.png" class="logo" alt="logo"></a></li> 
-                <li class="hideOnMobile" ><a class="active" href="index.html">Home</a></li>
-                <li class="hideOnMobile" ><a href="shop.html">Shop</a></li>
-                <li class="hideOnMobile" ><a href="About.html">About</a></li>
-                <li class="hideOnMobile" ><a href="contact.html">Contact</a></li>
-                <li class="hideOnMobile" ><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                
-                      
-                    
-                    
-                   <div  class="hideOnMobile"   class="dropdown">
-                     <a onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-user"></i></a>
-                     <div id="myDropdown" class="dropdown-content">
-                       
-                        <button class="subtn1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-                    <div id="id01" class="modal">
-  
-                      <form class="modal-content animate" action="/action_page.php" method="post">
-                          <div class="imgcontainer">
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                            <img src="image/person.png" alt="Avatar" class="avatar">
-                          </div>
-
-                         <div class="container">
-                            <label for="uname"><b>Username</b></label>
-                            <input type="text" placeholder="Enter Username" name="uname" required>
-
-                             <label for="psw"><b>Password</b></label>
-                             <input type="password" placeholder="Enter Password" name="psw" required>
-        
-                             <button class="subtn" type="submit">Login</button>
-                            <label>
-                               <input type="checkbox" checked="checked" name="remember"> <p><b>Remember me</b></p>
-                            </label>
-                         </div>
-
-                         <div class="container" style="background-color:#f1f1f1">
-                           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                           <span class="psw"><a href="#">Forgot password?</a></span>
-                         </div>
-                        </form>
-                   </div>
-                   
-                         <button class="btn2" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
-
-                          <div id="id02" class="modal2">
-                              <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal2">&times;</span>
-                             <form class="modal2-content2" action="/action_page.php">
-                              <div class="container2">
-                                 <h4>Sign Up</h4>
-                                 <p>Please fill in this form to create an account.</p>
-                                 <hr>
-                                <label for="email"><b>Email</b></label>
-                                  <input type="text" placeholder="Enter Email" name="email" required>
-
-                                  <label for="psw"><b>Password</b></label>
-                                  <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                 <label for="psw-repeat"><b>Repeat Password</b></label>
-                                 <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-                                <label>
-                                   <input type="checkbox" checked="checked" name="remember" > Remember me
-                                </label>
-
-                                  <p>By creating an account you agree to our <a href="terms.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-                                <div class="clearfix2">
-                                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
-                                  <button type="submit" class="signupbtn">Sign Up</button>
-                               </div>
-                             </div>
-                            </form>
-                        </div>
-
-                   </div>
-                   
-    
-                 </div>
-
-                    
-    
-             
-
-                
-                
-              <li class="menu-button" onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i></a> </li>
-            </ul>
-
-        
-        </section>
-
-<!-- <div class="topnav" id="myTopnav">
-     <img src="image/4S Fashion logo3.png" class="logo" alt="logo">
-  <a class="active" href="index.html">Home</a>
-   <form class="srcform">
-                    
-                    <input type="text" placeholder="search" class="searchBar">
-                     
-                </form>
-  <a href="shop.html">Shop</a>
-  <a href="About.html">About</a>
- <a href="contact.html">Contact</a>
- <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-  <div class="dropdown">
-                     <a onclick="myFunction()" class="dropbtn"><i class="fa-solid fa-user"></i></a>
-                     <div id="myDropdown" class="dropdown-content">
-                       
-                        <button class="subtn1" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-                    <div id="id01" class="modal">
-  
-                      <form class="modal-content animate" action="/action_page.php" method="post">
-                          <div class="imgcontainer">
-                            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-                            <img src="image/person.png" alt="Avatar" class="avatar">
-                          </div>
-
-                         <div class="container">
-                            <label for="uname"><b>Username</b></label>
-                            <input type="text" placeholder="Enter Username" name="uname" required>
-
-                             <label for="psw"><b>Password</b></label>
-                             <input type="password" placeholder="Enter Password" name="psw" required>
-        
-                             <button class="subtn" type="submit">Login</button>
-                            <label>
-                               <input type="checkbox" checked="checked" name="remember"> <p><b>Remember me</b></p>
-                            </label>
-                         </div>
-
-                         <div class="container" style="background-color:#f1f1f1">
-                           <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                           <span class="psw"><a href="#">Forgot password?</a></span>
-                         </div>
-                        </form>
-                   </div>
-                   
-                         <button class="btn2" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sign Up</button>
-
-                          <div id="id02" class="modal2">
-                              <span onclick="document.getElementById('id02').style.display='none'" class="close2" title="Close Modal2">&times;</span>
-                             <form class="modal2-content2" action="/action_page.php">
-                              <div class="container2">
-                                 <h4>Sign Up</h4>
-                                 <p>Please fill in this form to create an account.</p>
-                                 <hr>
-                                <label for="email"><b>Email</b></label>
-                                  <input type="text" placeholder="Enter Email" name="email" required>
-
-                                  <label for="psw"><b>Password</b></label>
-                                  <input type="password" placeholder="Enter Password" name="psw" required>
-
-                                 <label for="psw-repeat"><b>Repeat Password</b></label>
-                                 <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-                                <label>
-                                   <input type="checkbox" checked="checked" name="remember" > Remember me
-                                </label>
-
-                                  <p>By creating an account you agree to our <a href="terms.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-                                <div class="clearfix2">
-                                  <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn2">Cancel</button>
-                                  <button type="submit" class="signupbtn">Sign Up</button>
-                               </div>
-                             </div>
-                            </form>
-                        </div>
-
-                   </div>
-                   
-    
-                 </div>
-  <a href="javascript:void(0);" class="icon" onclick="MyFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div> -->
         <section id="mainpicture">
     <div
         id="mainimg">
@@ -653,16 +410,24 @@
         <button onclick="window.location.href='singelproduct48.html'" class="normal">Shop now</button>
     </div>
 </section>
-<section id="banner3" class="section-p1" class="section-m1">
-    <div class="banner3txt">
-        <h4>Sign up for Updates</h4>
-        <p>Get email Updates about our lates offers and <span>exclusive deals.</span>.</p>
-    </div>
-    <!-- <div class="form"><input type="email" placeholder="johndoe@gamil.com">
-    <button id="email"  onclick="emailnews()" class="normal">Submit</button>
-    </div> -->
-    
-</section>
+<form action="/action_page.php">
+  <div class="containerz">
+    <h2>Subscribe to our Newsletter</h2>
+    <p>For Weekly Deals</p>
+  </div>
+
+  <div class="container" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+    </label>
+  </div>
+
+  <div class="containerz">
+    <input type="submit" value="Subscribe">
+  </div>
+</form>
 <footer class="section-p1">
     <div class="col">
         <img class="logoft" src="image/4S Fashion logo3.png" alt="logo">
@@ -720,7 +485,7 @@
 
 
 
-
+<script src="java/bootstrap.js"></script>
 <script src="java/javascript.js"></script>
 
 

@@ -1,5 +1,5 @@
 /* glabal styling */
-*{
+/* *{
     margin: 0;
     padding:0;
 }
@@ -7,7 +7,7 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     position: relative;
-}
+} */
 html{
     scroll-behavior: smooth;
 }
@@ -79,7 +79,7 @@ li{
 }
 body{
     
-    background-color: #ece9e2;
+   /*  background-color: #ece9e2; */
     overflow-y: auto;
     
 }
@@ -98,146 +98,12 @@ button.normal{
 }
  /* global styling */
  
-#header {
-    /* display: flex; */
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px 290px;
-    background-color: #fff;
-    box-shadow: 0px 10px 30px #00000044;
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    width: 90%;
-    /* max-width: 1100px; */
-    transform: translate(-50px);
-    z-index: 999;
-    /* border-radius: 50px; */
-    backdrop-filter: blur(15px);
-    animation: anime 0.5s ease forwards;
-    overflow-x: clip;
-}
-@keyframes anime{
-    from{
-        opacity: 0;
-        transform: translate(-50%, -40px);
-    }
-    to{
-        opacity: 1;
-        transform: translate(-50%,0);
-    }
-}
-.sidebar{
-    position: fixed;
-    right: 0;
-    top: 0;
-    height:100vh;
-    width: 100%;
-    z-index: 999;
-    background-color: rgba(255, 255, 255, 0.586);
-    backdrop-filter: blur(10PX);
-    box-shadow: -10px 0 10px rgb(0,0,0,0.01);
-    display: none;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    justify-content: space-between;
-
-}
-.sidebar li {
-    text-decoration: none;
-    list-style: none;
-    width: 100%;
-}
-.sidebar a{
-    text-decoration: none;
-    color: #000;
-    width: 100%;
-}
-.menu-button{
-    display: none;
-}
-
-#navbar{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container-fluid {
+   background-color: #ece9e2;
     
-
-}
-#navbar li:first-child{
-    margin-right: auto;
-
-}
-
-
-
-
-#navbar li a{
-    text-decoration: none;
-    font-size: 16px;
-    font-weight:700;
-    color: black;
-    font-family: lato;
-    transition: 0.2s ease;
-}
-#navbar li{
-    list-style:none;
-    padding: 0px 40px;
-    position: relative;
-}
-#navbar li a:hover{
-color: red;
-}
-#navbar li a:hover,
-#navbar li a.active{
-    color: red;
-}
-#navbar li a.active::after,
-#navbar li a:hover::after{
-    content:"" ;
-    width: 30%;
-    height: 2px;
-    background: red;
-    position: absolute;
-    bottom: -4px;
-    left: 40px;
-} 
-
-.srcform{
-    
-    display: flex;
-    padding-top: 11px;
-    width: 150px;
-    padding-left: 50px;
-  
-}
-
-
-.searchBar{
-    outline: none;
-    background-color: #ece9e2;
-    border-radius: 10px;
-    box-sizing: border-box;
-    border: none;
-    height: 5px;
    
-}
-
-.logo{
-
-    height: 50px;  
-}
- 
-
-/* drop down menu */
-.dropbtn {
-  
-  color: black;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+    
+   
 }
 
 
@@ -314,9 +180,10 @@ padding-bottom: 15px;
     text-align: center;
 }
 #display .products{
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
     justify-content:space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     
 }
 /* box around items */
@@ -417,51 +284,39 @@ padding-bottom: 15px;
     background-color: red;
     color: #ffff;
 }
-#banner3{
-    display: flex;
-    padding:0 20em;
-    align-items: center;
-    background-color: rgb(17, 17, 113);
-    width: 100%;
-    box-sizing: border-box;
-    
+form {
+  border: 3px solid #f1f1f1;
+  font-family: Arial;
+}
 
+.containerz {
+  padding: 20px;
+  background-color: #f1f1f1;
 }
-#banner3 h4{
-    color: #fff;
-    font-weight: 900;
-    
-    font-size: 30px;
 
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
-#banner3 p{
-    color: #fafafa;
-    font-weight: 600;
-    
-    font-size: 14px;
 
+input[type=checkbox] {
+  margin-top: 16px;
 }
-#banner3 p span{
-    color:red;
-    font-weight: 600;
-    font-family: lato;
-    font-size: 14px;
 
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
 }
-#banner3 .form{
-    display: flex;
-    width: 40px;
+
+input[type=submit]:hover {
+  opacity: 0.8;
 }
-#banner3 input{
-    height: 3.2rem;
-    padding: 0 5em;
-}
-    
-#banner3 button{
-    
-    background-color: #ece9e2;
-    
-}
+
 
 footer img{
     height: 50px;
@@ -556,7 +411,7 @@ footer .copyright{
 #prodetails .singlepro-img{
 width: 30%;
 margin-right: 50px;
-border: 1px solid #fff;
+border: 1px solid #ece9e2;
 margin-left: 5%;
 margin-top: 5%;
 
@@ -568,7 +423,7 @@ margin-top: 5%;
 .small-img-col{
     flex-basis: 24%;
     cursor:pointer;
-    border: 4px solid #fff;
+    border: 1px solid #ece9e2;
     
 }
 #prodetails .singel-pro-details{
@@ -959,192 +814,11 @@ span.psw {
 }
 
 /* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  
-  overflow: none; /* Enable scroll if needed */
-  
-  padding-top: 50px;
-}
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 50%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  
-  top: 0;
-  color: #000;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}
 
 /* sign up form */
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
 
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for all buttons */
-.btn2 {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 35px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  
-}
-
-.btn2:hover {
-  opacity: 0.7;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn2 {
-  padding: 14px 20px;
-  background-color: #f44336;
-  cursor: pointer;
-  border: none;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn2, .signupbtn {
-  float: left;
-  width: 50%;
-  
-}
-.signupbtn{
-     padding: 14px 0px;
-     background-color: #04AA6D;
-     cursor: pointer;
-     border: none;
-}
-.signupbtn:hover{
-   opacity: 0.9;
-}
-.cancelbtn2:hover{
-    opacity: 0.9;
-}
-
-
-/* Add padding to container elements */
-.container2 {
-  padding: 15px;
-}
-
-/* The Modal (background) */
-.modal2 {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  
-  width: 30%; /* Full width */
-  height: 30%; /* Full height */
-  overflow: none; /* Enable scroll if needed */
- 
-  /* padding-top: 0px; */
-}
-
-/* Modal Content/Box */
-.modal2-content2 {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-  border: 1px solid #f1f1f1;
- 
-}
- 
-/* The Close Button (x) */
-.close2 {
-  position: absolute;
-  right: 45px;
-  bottom: -45px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #0b0b0b;
-}
-.modal2 h4{
-    position: relative;
-}
-
-.close2:hover,
-.close2:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix2::after {
-  content: "";
-  clear: both;
-  display: table;
- 
-}
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
@@ -1336,7 +1010,7 @@ hr {
 }
 #banner2 {
     height: 22vh;
-    width: 103%;
+    width: 100%;
 }
 #banner h2, #banner2 h2 {
     font-size: 35px;
@@ -1381,31 +1055,24 @@ hr {
 
 @media (max-width:620px){
     #offers {
-    margin: -46px -240px -9px 10px;
+    width: 100%;
+    height: 20vh;
 }
 
 }
 
 @media (max-width:480px){
-    .sidebar{
-        width: 50%;
-    }
+    
  #offers {
     width: 100%;
+    height: 20vh;
 }
 #display .products {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 5px;
 }
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 30px 0 0px 0px;
-    width: 100%;
-    overflow-x: hidden;
-}
+
 #mainpicture {
     gap: 5px;
     grid-template-columns: 1fr;
@@ -1414,29 +1081,26 @@ hr {
     flex-wrap: nowrap;
     justify-content: space-around;
 }
-#banner {
-   /*  padding: 0 425px 0 0; */
-    
-    width: 100%;
-    height: 29vh;
-   
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 #banner h2, #banner2 h2 {
-    font-size: 24px;
+    font-size: 16px;
     padding: 0px 0;
     color: #ffff;
 }
 #banner2 {
-    padding: 0 416px 0 0;
-    height: 22vh;
+  
+    height: 16vh !important;
     width: 100%;
-    background-size: cover;
-    background-position: center;
 }
 #pm-banner {
     display: grid;
-    grid-template-columns: 1fr;
-    
+    grid-template-columns: 50% 50%;
+    gap: 24px;
 }
 .banner-box4 {
     padding: 0 144px 0 31px;
@@ -1453,6 +1117,7 @@ hr {
     background-size: cover;
     background-position: center;
     padding: 0 144px 0 31px;
+    display: none;
 }
 .banner-box3 {
     background-image: url("image/banner/action3.jpg");
@@ -1461,5 +1126,38 @@ hr {
     background-size: cover;
     background-position: center;
      padding: 0 144px 0 31px;
+}
+#banner {
+    
+    width: 100%;
+    height: 16vh !important;
+   
+}
+.banner-box1 {
+   
+    width: 100% !important;
+    height: 29vh !important;
+    
+}
+.banner-box {
+    
+    width: 100% !important;
+    height: 26vh !important;
+   ;
+}
+#sm-banner h2 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+    padding-left: 30px;
+}
+.section-p1 {
+    padding: 10px 36px 0px 13px !important;
+}
+#banner h4, #banner2 h4 {
+    font-size: 10px;
+    letter-spacing: 1em;
+    text-align: center;
+    color: white;
 }
 }
