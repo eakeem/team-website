@@ -113,8 +113,9 @@
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="cart.html">Cart</a>
+         <li class="nav-item" >
+          <a class="nav-link" id="cart-icon" href="#">Cart</a>
+           <span class="cart-item-count"></span>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -127,7 +128,30 @@
     </div>
   </div>
 </nav>
-
+<div class="cart">
+    <h2 class="cart-title">Your cart</h2>
+    <div class="cart-content">
+        <div class="cart-box">
+            <img src="image/products/jacket2.png" class="cart-img" alt="">
+            <div class="cart-detail">
+                <h2 class="cart-product-title">adidas adios sneakers</h2>
+                <span class="cart-price">JMD 15000</span>
+                <div class="cart-quantity">
+                    <button id="decrement">-</button>
+                    <span class="number">1</span>
+                    <button id="increment">+</button>
+                </div>
+            </div>
+            <i class="fa-solid fa-trash-can cart-remove "></i>
+        </div>
+    </div>
+    <div class="total">
+        <div class="total-title">Total </div>
+        <div class="total-price">JMD0</div>
+    </div>
+    <button class="btn-buy">Buy Now</button>
+    <i class="fa-solid fa-xmark" id="cart-close"></i>
+</div>
 
         <section id="mainpicture">
     <div
@@ -282,7 +306,7 @@
                 <h5> Grey shirt and floral shorts set</h5>
                 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>
                 <h4>JMD 6,000.00</h4>
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a ><i class="fa-solid fa-cart-shopping add-cart" ></i></a>
             </div>
           
            </div>
