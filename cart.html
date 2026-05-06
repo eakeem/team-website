@@ -6,8 +6,9 @@
     <title>4s Fashion</title>
     <!-- Font Awesome CDN this is use to get fonts , type in font awesome on google and access the -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-     <link rel="stylesheet" href="stylesheet/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheet/style.css">
+   <link rel="stylesheet" href="stylesheet/style.css">
+<link rel="stylesheet" href="stylesheet/bootstrap.min.css">
+    
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 </style>
 
 </head>
-<body><!--  navigation bar needs icon and logo -->
+<body>
      <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <img src="image/4S Fashion logo3.png" alt="" width="50px">
@@ -26,26 +27,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="shop.html">shop</a>
+          <a class="nav-link" href="shop.html">Shop</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Login</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <li class="nav-item">
+           <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a> 
+          
         </li>
+         <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="cart.html">Cart</a>
+         <li class="nav-item" >
+          <a class="nav-link active" href="cart.html" >Cart</a>
+           <span class="cart-item-count"></span>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -58,89 +57,172 @@
     </div>
   </div>
 </nav>
-  
-
+   
+      
+        <section class="container my-5">
+  <div class="row">
+    <!-- Payment Section -->
+    <div class="col-md-6 mb-4">
+      <h3 class="mb-3">Payment</h3>
+      <p>Accepted Cards</p>
+      <img src="image/payments.png" alt="Accepted Cards" class="mb-3" width="180">
+      <form>
+        <div class="mb-3">
+          <label for="cname" class="form-label">Name on Card</label>
+          <input type="text" id="cname" name="cardname" class="form-control" placeholder="John M. Doe" required>
         </div>
-        
+        <div class="mb-3">
+          <label for="ccnum" class="form-label">Credit Card Number</label>
+          <input type="text" id="ccnum" name="cardnumber" class="form-control" placeholder="1111 2222 3333 4444" required>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="expmonth" class="form-label">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" class="form-control" placeholder="September" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="expyear" class="form-label">Exp Year</label>
+            <input type="text" id="expyear" name="expyear" class="form-control" placeholder="2026" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cvv" class="form-label">CVV</label>
+            <input type="text" id="cvv" name="cvv" class="form-control" placeholder="352" required>
+          </div>
+        </div>
+      </form>
     </div>
-    <section id="cartpg"  class="section-p1" >
-        <table width="100%">
-            <thead>
-                <tr>
-                    <td>Remove</td>
-                    <td>Item</td>
-                    <td>Product</td>
-                    <td>Price</td>
-                    <td>Quantity</td>
-                    <td>Subtotal</td>
 
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><i class="fa-solid fa-trash"></i></td>
-                    <td><img src="image/products/sneaker6.png"></td>
-                    <td>add text here</td>
-                    <td>jmd $7500.00</td>
-                    <td><input type="number" value="1" ></td>
-                    <td>jmd $7500.00</td>
-                </tr>
-                <tr>
-                    <td><i class="fa-solid fa-trash"></i></td>
-                    <td><img src="image/products/sneaker5.png"></td>
-                    <td>add text here</td>
-                    <td>jmd $15000.00</td>
-                    <td><input type="number" value="3" ></td>
-                    <td>jmd $45,000.00</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section id="cartAdd">
-        <div id="total">
-            <h3>Cart totals</h3>
-            <table>
-                <tr>
-                    <td>Cart Total</td>
-                    <td>Jmd $35000.00</td>
+    <!-- Cart Summary -->
+    <div class="col-md-6 mb-4">
+      <h3 class="text-center mb-4">Cart Summary</h3>
+      <table class="table table-bordered text-center">
+        <thead class="table-light">
+          <tr>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Price (JMD)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="image/products/sneaker8.png" alt="Shoes" width="60"> Shoes</td>
+            <td>1</td>
+            <td>$15,000.00</td>
+          </tr>
+          <tr>
+            <td><img src="image/products/shirt9.png" alt="Shorts" width="60"> Shorts</td>
+            <td>1</td>
+            <td>$18,000.00</td>
+          </tr>
+          <tr>
+            <td><img src="image/products/shoes15.png" alt="Red Shirt" width="60"> Red Shirt</td>
+            <td>1</td>
+            <td>$12,000.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr class="table-dark">
+            <th colspan="2">Total</th>
+            <th>$45,000.00</th>
+          </tr>
+        </tfoot>
+      </table>
 
-                </tr>
-                <tr>
-                    <td>Shipping</td>
-                    <td>Free</td>
-                </tr>
-                <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>Jmd $35000.00</strong></td>
-                </tr>
-            </table>
-            <button class="normal">Proceed to checkout</button>
+      <!-- Discount Code Input -->
+      <div class="row mb-4">
+        <div class="col-md-8 offset-md-2">
+          <h5>Have a Discount Code?</h5>
+          <form class="d-flex">
+            <input type="text" class="form-control me-2" placeholder="Enter code" id="discountCode">
+            <button type="button" class="btn btn-outline-primary" onclick="applyDiscount()">Apply</button>
+          </form>
+          <small id="discountMessage" class="text-success"></small>
         </div>
-    </section>
+      </div>
 
-
-<form action="/action_page.php">
-  <div class="containerz">
-    <h2>Subscribe to our Newsletter</h2>
-    <p>For Weekly Deals</p>
+      <!-- Complete Purchase Button -->
+      <div class="text-center mt-4">
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#confirmModal">
+          Complete Purchase
+        </button>
+      </div>
+    </div>
   </div>
 
-  <div class="container" style="background-color:white">
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="text" placeholder="Email address" name="mail" required>
-    <label>
-      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-    </label>
+  <!-- Billing Address (Last Section) -->
+  <div class="row mt-5">
+    <div class="col-md-12">
+      <h3 class="mb-3">Billing Address</h3>
+      <form>
+        <div class="mb-3">
+          <label for="fname" class="form-label">Full Name</label>
+          <input type="text" id="fname" name="fname" class="form-control" placeholder="John M. Doe" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="adr" class="form-label">Address</label>
+          <input type="text" id="adr" name="address" class="form-control" placeholder="542 W. 15th Street" required>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="city" class="form-label">Town</label>
+            <input type="text" id="city" name="city" class="form-control" placeholder="Ocho Rios" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="state" class="form-label">Parish</label>
+            <input type="text" id="state" name="state" class="form-control" placeholder="St. Ann" required>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="zip" class="form-label">Postal Code</label>
+          <input type="text" id="zip" name="zip" class="form-control" placeholder="PM0218" required>
+        </div>
+      </form>
+    </div>
   </div>
+</section>
 
-  <div class="containerz">
-    <input type="submit" value="Subscribe">
+<!-- Complete Purchase Button -->
+<div class="text-center mt-4">
+  <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#confirmModal">
+    Complete Purchase
+  </button>
+</div>
+
+<!-- Confirmation Modal -->
+<div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="confirmModalLabel">Confirm Your Order</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Please review your order before finalizing:</p>
+        <ul>
+          <li>✔️ Shoes – $15,000.00</li>
+          <li>✔️ Shorts – $18,000.00</li>
+          <li>✔️ Red Shirt – $12,000.00</li>
+        </ul>
+        <p><strong>Total: $45,000.00 JMD</strong></p>
+        <p>Billing and payment details will be processed securely.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-success">Confirm & Pay</button>
+      </div>
+    </div>
   </div>
-</form>
+</div>
+
+
 
 <footer class="section-p1">
     <div class="col">
-        <img class="logoft" src="image/logo" alt="logo">
+        <img class="logoft" src="image/4S Fashion logo3.png" alt="logo">
         <h4>Contact</h4>
         <p><strong>Address:</strong> 50 Main Street, Ocho Rios, St.Ann</p>
         <p><strong>Phone:</strong>1876-9905020</p>
@@ -182,9 +264,106 @@
         <p>&copy 2026 4s Fashion. All rights Reserved</p>
     </div>
 </footer>
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content signin-card">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="signupModalLabel">Create Your 4s Fashion Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="text-muted">Join us to access exclusive deals & collections</p>
+        <form>
+          <div class="mb-3 text-start">
+            <input type="text" id="fullname" class="form-control" placeholder="Full Name" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="email" id="signupEmail" class="form-control" placeholder="Email address" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="password" id="signupPassword" class="form-control" placeholder="Password" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
+          </div>
+          <button type="submit" class="btn-signin">Sign Up</button>
+        </form>
+
+        <!-- Social Sign Up -->
+        <div class="social-login">
+          <button class="btn btn-outline-dark">Continue with Google</button>
+          <button class="btn btn-outline-primary">Continue with Facebook</button>
+        </div>
+
+        <div class="signin-footer">
+          <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content signin-card">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="loginModalLabel">Welcome to 4s Fashion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="text-muted">Sign in to unlock deals & shop smarter</p>
+        <form>
+          <div class="mb-3 text-start">
+            <input type="email" id="loginEmail" class="form-control" placeholder="Email address" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="password" id="loginPassword" class="form-control" placeholder="Password" required>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <div>
+              <input type="checkbox" id="rememberMe">
+              <label for="rememberMe">Remember me</label>
+            </div>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn-signin">Sign In</button>
+        </form>
+
+        <!-- Social Login -->
+        <div class="social-login mt-3">
+          <button class="btn btn-outline-dark w-100 mb-2">Continue with Google</button>
+          <button class="btn btn-outline-primary w-100">Continue with Facebook</button>
+        </div>
+
+        <div class="signin-footer mt-3">
+          <p>New to 4s Fashion? 
+            <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Create Account</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="java/bootstrap.js"></script>
 
 <script src="java/javascript.js"></script>
+<script>
+function applyDiscount() {
+  const code = document.getElementById("discountCode").value.trim();
+  const message = document.getElementById("discountMessage");
+  if (code.toUpperCase() === "4SFASHION10") {
+    message.textContent = "Discount applied! 10% off your order.";
+    // Example: adjust total dynamically
+    document.querySelector("tfoot th:last-child").textContent = "$40,500.00";
+  } else {
+    message.textContent = "Invalid code. Try again.";
+    message.classList.remove("text-success");
+    message.classList.add("text-danger");
+  }
+}
+</script>
+
 </body>
 </html>

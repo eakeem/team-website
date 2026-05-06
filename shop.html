@@ -6,8 +6,9 @@
     <title>4s Fashion</title>
     <!-- Font Awesome CDN this is use to get fonts , type in font awesome on google and access the -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="stylesheet/style.css">
 <link rel = "stylesheet" href="stylesheet/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheet/style.css">
+    
     <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2026/03/06/19/20260306193107-TEXDVDQK.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +36,7 @@
 
 </head>
 <body><!--  navigation bar needs icon and logo -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+     <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <img src="image/4S Fashion logo3.png" alt="" width="50px">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,26 +45,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="shop.html">shop</a>
+          <a class="nav-link active" href="shop.html">Shop</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Login</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <li class="nav-item">
+           <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a> 
+          
         </li>
+         <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="cart.html">Cart</a>
+         <li class="nav-item" >
+          <a class="nav-link" href="cart.html" >Cart</a>
+           <span class="cart-item-count"></span>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -406,24 +405,26 @@
     <a href="#"><i class="fa-solid fa-arrow-right"></i></i></a>
 
 </section>
-<form action="/action_page.php">
-  <div class="containerz">
-    <h2>Subscribe to our Newsletter</h2>
-    <p>For Weekly Deals</p>
-  </div>
-
-  <div class="container" style="background-color:white">
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="text" placeholder="Email address" name="mail" required>
-    <label>
-      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-    </label>
-  </div>
-
-  <div class="containerz">
-    <input type="submit" value="Subscribe">
-  </div>
-</form>
+<section class="container my-5 text-center">
+  <h2 class="mb-3">Subscribe to Our Newsletter</h2>
+  <p class="text-muted mb-4">
+    Get weekly deals, style tips, and exclusive updates straight to your inbox.
+  </p>
+  <form class="row g-3 justify-content-center">
+    <div class="col-md-4 col-sm-10">
+      <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+    </div>
+    <div class="col-md-4 col-sm-10">
+      <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+    </div>
+    <div class="col-md-2 col-sm-10">
+      <button type="submit" class="btn btn-dark w-100">Subscribe</button>
+    </div>
+  </form>
+  <small class="text-muted d-block mt-3">
+    We respect your privacy. Unsubscribe anytime.
+  </small>
+</section>
 
 <footer class="section-p1">
     <div class="col">
@@ -469,7 +470,87 @@
         <p>&copy 2026 4s Fashion. All rights Reserved</p>
     </div>
 </footer>
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content signin-card">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="signupModalLabel">Create Your 4s Fashion Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="text-muted">Join us to access exclusive deals & collections</p>
+        <form>
+          <div class="mb-3 text-start">
+            <input type="text" id="fullname" class="form-control" placeholder="Full Name" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="email" id="signupEmail" class="form-control" placeholder="Email address" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="password" id="signupPassword" class="form-control" placeholder="Password" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
+          </div>
+          <button type="submit" class="btn-signin">Sign Up</button>
+        </form>
 
+        <!-- Social Sign Up -->
+        <div class="social-login">
+          <button class="btn btn-outline-dark">Continue with Google</button>
+          <button class="btn btn-outline-primary">Continue with Facebook</button>
+        </div>
+
+        <div class="signin-footer">
+          <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content signin-card">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="loginModalLabel">Welcome to 4s Fashion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="text-muted">Sign in to unlock deals & shop smarter</p>
+        <form>
+          <div class="mb-3 text-start">
+            <input type="email" id="loginEmail" class="form-control" placeholder="Email address" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="password" id="loginPassword" class="form-control" placeholder="Password" required>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <div>
+              <input type="checkbox" id="rememberMe">
+              <label for="rememberMe">Remember me</label>
+            </div>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn-signin">Sign In</button>
+        </form>
+
+        <!-- Social Login -->
+        <div class="social-login mt-3">
+          <button class="btn btn-outline-dark w-100 mb-2">Continue with Google</button>
+          <button class="btn btn-outline-primary w-100">Continue with Facebook</button>
+        </div>
+
+        <div class="signin-footer mt-3">
+          <p>New to 4s Fashion? 
+            <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Create Account</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script src="java/bootstrap.js"></script>

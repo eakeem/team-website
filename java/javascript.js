@@ -24,73 +24,32 @@ smallimg[4].onclick=function(){
 
 
 
+/* document.getElementById("newsletterForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // prevent actual submission for demo
+  var toastEl = document.getElementById("successToast");
+  var toast = new bootstrap.Toast(toastEl);
+  toast.show();
+  this.reset(); // clear form fields
+});
+ */
 
-
-
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-
-
-
-
-/* 
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-} */
+document.getElementById("newsletterForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // prevent actual submission
+  var toastEl = document.getElementById("successToast");
+  var toast = new bootstrap.Toast(toastEl, { delay: 5000 }); // auto-dismiss after 5s
+  toast.show();
+  this.reset(); // clear form fields
+});
 
 
 
 
-var modal2 = document.getElementById('id02');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal2) {
-    modal2.style.display = "none";
-  }
-}
-
-
-
-function showSidebar(){
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'flex'
-}
-
-function hideSidebar(){
-  const sidebar = document.querySelector('.sidebar')
-  sidebar.style.display = 'none'
-}
 
 
 
 
-const cartIcon = document.querySelector("#cart-icon");
-const cart = document.querySelector(".cart");
-const cartClose = document.querySelector("#cart-close");
-cartIcon.addEventListener("click", () => cart.classList.add("active"));
-cartClose.addEventListener("click", () => cart.classList.remove("active"));
+
+
 
 
 

@@ -6,18 +6,28 @@
     <title>4s Fashion</title>
     <!-- Font Awesome CDN this is use to get fonts , type in font awesome on google and access the -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="stylesheet/style.css">
 <link rel = "stylesheet" href="stylesheet/bootstrap.min.css">
-    <link rel="stylesheet" href="stylesheet/style.css">
+    
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
 
-</style>
+<style>#banner8{
+    background-image: url("image/pointing.jpg");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}</style>
 
 </head>
 <body><!--  navigation bar needs icon and logo -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <img src="image/4S Fashion logo3.png" alt="" width="50px">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,26 +36,24 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          <a class="nav-link" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="shop.html">shop</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Login</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          <a class="nav-link" href="shop.html">Shop</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+           <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a> 
+          
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="cart.html">Cart</a>
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+         </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="about.html">About</a>
+        </li>
+         <li class="nav-item" >
+          <a class="nav-link" href="cart.html" >Cart</a>
+           <span class="cart-item-count"></span>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
@@ -58,29 +66,108 @@
     </div>
   </div>
 </nav>
-        
+       <section id="banner8" class="section-m1">
+    
+    <h2>Know us</h2>
+     <h4>Explore 4s Fashion</h4>
+</section> 
 
-
-
-
-<form action="/action_page.php">
-  <div class="containerz">
-    <h2>Subscribe to our Newsletter</h2>
-    <p>For Weekly Deals</p>
+<h2 class="text-center mb-4">Our Story</h2>
+  <p class="lead text-center">
+    4s Fashion was born from a passion for bold style and authentic streetwear. 
+    We bring together top brands like Adidas, Nike, Puma, and Polo to create a space 
+    where fashion meets comfort and individuality. Our collections are curated for 
+    those who live confidently, move freely, and express themselves through every outfit.
+  </p>
+</section>
+<section class="container my-5">
+  <h2 class="text-center mb-4">Our Featured Brands</h2>
+  <div id="brandCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner text-center">
+      <div class="carousel-item active">
+        <img src="image/products/adidas.png" alt="Adidas" class="d-block mx-auto" width="150">
+      </div>
+      <div class="carousel-item">
+        <img src="image/products/converse.png" alt="Nike" class="d-block mx-auto" width="150">
+      </div>
+      <div class="carousel-item">
+        <img src="image/products/puma.png" alt="Puma" class="d-block mx-auto" width="150">
+      </div>
+      <div class="carousel-item">
+        <img src="image/products/polo.png" alt="Polo" class="d-block mx-auto" width="150">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#brandCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#brandCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
   </div>
+</section>
 
-  <div class="container" style="background-color:white">
-    <input type="text" placeholder="Name" name="name" required>
-    <input type="text" placeholder="Email address" name="mail" required>
-    <label>
-      <input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
-    </label>
-  </div>
+<section class="container my-5">
+  <h2 class="text-center mb-4">Our Mission</h2>
+  <p class="text-center">
+    To inspire confidence and creativity through fashion that blends global trends 
+    with local culture. We believe in quality, accessibility, and the power of self expression.
+  </p>
+</section>
+<section class="container my-5">
+  <h2 class="text-center mb-4">Meet Our Stylists</h2>
+  <p class="text-center mb-5">
+    Behind every look is a team of creative minds who live and breathe fashion. 
+    Our stylists bring global trends to local streets — helping you find your perfect fit.
+  </p>
 
-  <div class="containerz">
-    <input type="submit" value="Subscribe">
+  <div class="row text-center">
+    <div class="col-md-3 mb-4">
+      <img src="image/person.png" alt="Stylist 1" class="rounded-circle mb-3" width="150" height="150">
+      <h5>Akeem Ellis</h5>
+      <p>Lead Designer</p>
+    </div>
+    <div class="col-md-3 mb-4">
+      <img src="image/kid.jpg" alt="Stylist 2" class="rounded-circle mb-3" width="150" height="150">
+      <h5>Richie Dixon</h5>
+      <p>Trend Curator</p>
+    </div>
+    <div class="col-md-3 mb-4">
+      <img src="image/4sfashionlogo2.png" alt="Stylist 3" class="rounded-circle mb-3" width="150" height="150">
+      <h5>Kemour Brown</h5>
+      <p>Visual Stylist</p>
+    </div>
+    <div class="col-md-3 mb-4">
+      <img src="image/pngwing.com.png" alt="Stylist 4" class="rounded-circle mb-3" width="150" height="150">
+      <h5>Rojea Laird</h5>
+      <p>Brand Ambassador</p>
+    </div>
   </div>
-</form>
+</section>
+
+
+
+
+
+<section class="container my-5 text-center">
+  <h2 class="mb-3">Subscribe to Our Newsletter</h2>
+  <p class="text-muted mb-4">
+    Get weekly deals, style tips, and exclusive updates straight to your inbox.
+  </p>
+  <form class="row g-3 justify-content-center">
+    <div class="col-md-4 col-sm-10">
+      <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+    </div>
+    <div class="col-md-4 col-sm-10">
+      <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+    </div>
+    <div class="col-md-2 col-sm-10">
+      <button type="submit" class="btn btn-dark w-100">Subscribe</button>
+    </div>
+  </form>
+  <small class="text-muted d-block mt-3">
+    We respect your privacy. Unsubscribe anytime.
+  </small>
+</section>
 
 <footer class="section-p1">
     <div class="col">
@@ -126,7 +213,87 @@
         <p>&copy 2026 4s Fashion. All rights Reserved</p>
     </div>
 </footer>
+<!-- Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content signin-card">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="signupModalLabel">Create Your 4s Fashion Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="text-muted">Join us to access exclusive deals & collections</p>
+        <form>
+          <div class="mb-3 text-start">
+            <input type="text" id="fullname" class="form-control" placeholder="Full Name" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="email" id="signupEmail" class="form-control" placeholder="Email address" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="password" id="signupPassword" class="form-control" placeholder="Password" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="password" id="confirmPassword" class="form-control" placeholder="Confirm Password" required>
+          </div>
+          <button type="submit" class="btn-signin">Sign Up</button>
+        </form>
 
+        <!-- Social Sign Up -->
+        <div class="social-login">
+          <button class="btn btn-outline-dark">Continue with Google</button>
+          <button class="btn btn-outline-primary">Continue with Facebook</button>
+        </div>
+
+        <div class="signin-footer">
+          <p>Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content signin-card">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="loginModalLabel">Welcome to 4s Fashion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="text-muted">Sign in to unlock deals & shop smarter</p>
+        <form>
+          <div class="mb-3 text-start">
+            <input type="email" id="loginEmail" class="form-control" placeholder="Email address" required>
+          </div>
+          <div class="mb-3 text-start">
+            <input type="password" id="loginPassword" class="form-control" placeholder="Password" required>
+          </div>
+          <div class="d-flex justify-content-between mb-3">
+            <div>
+              <input type="checkbox" id="rememberMe">
+              <label for="rememberMe">Remember me</label>
+            </div>
+            <a href="#">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn-signin">Sign In</button>
+        </form>
+
+        <!-- Social Login -->
+        <div class="social-login mt-3">
+          <button class="btn btn-outline-dark w-100 mb-2">Continue with Google</button>
+          <button class="btn btn-outline-primary w-100">Continue with Facebook</button>
+        </div>
+
+        <div class="signin-footer mt-3">
+          <p>New to 4s Fashion? 
+            <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" data-bs-dismiss="modal">Create Account</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="java/bootstrap.js"></script>
 
 <script src="java/javascript.js"></script>
