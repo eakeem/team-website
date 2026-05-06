@@ -61,7 +61,7 @@ span{
 strong{
     font-family: lato;
 }
-td,{
+td{
     font-family: lato;
 }
 tr{
@@ -270,40 +270,8 @@ form .btn-dark {
   font-weight: 600;
 }
 
-/* form {
-  border: 3px solid #f1f1f1;
-  font-family: Arial;
-}
 
-.containerz {
-  padding: 20px;
-  background-color: #f1f1f1;
-}
-
-input[type=text], input[type=submit] {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-input[type=checkbox] {
-  margin-top: 16px;
-}
-
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  border: none;
-}
-
-input[type=submit]:hover {
-  opacity: 0.8;
-} */
-
-
+/*footer section*/
 footer img{
     height: 50px;
 
@@ -312,7 +280,7 @@ footer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+background-color: #ece9e2;
 }
 footer .col{
     flex-direction: column;
@@ -401,6 +369,19 @@ border: 1px solid #ece9e2;
 margin-left: 5%;
 margin-top: 5%;
 
+}
+.normal1{
+    background-color: #369e62;
+    color: white;
+     font-size:14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    font-family: lato;
 }
 .small-img-group{
     display: flex;
@@ -547,71 +528,6 @@ align-items: flex-start;
 /* contact us page */
 
 
-/* #contactDetails{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    margin: 10% 10% 0 10%;
-}
-#contactDetails .details{
-    width: 40%;
-}
-#contactDetails .details span,
-#formDetails form span{
-    font-size: 12px;
-}
-#contactDetails .details h2,
-#formDetails form h2{
-    font-size: 26px;
-    line-height: 35px;
-    padding: 20px 0;
-}
-#contactDetails .details li{
-    list-style: none;
-    display: flex;
-    padding: 10px 0;
-}
-#contactDetails .details li i{
-    font-size: 20px;
-    padding-right: 22px;
-}
-#contactDetails .details li p{
-    margin: 0;
-    font-size: 14px;
-}
-#contactDetails .details .map{
-    width: 55%;
-    height: 400px;
-
-}
-#contactDetails .details .map iframe{
-    width: 100%;
-    height: 100%;
-    
-}
-#formDetails form{
-width: 65%;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-
-}
-#formDetails form input,
-#formDetails form  textarea{
-    width: 90%;
-    padding: 12px 15px;
-    outline: none;
-    margin-bottom: 20px;
-    border: 5px solid #fff;
-}
-#formDetails {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-} */
 .contact-card {
       background: #fff;
       border-radius: 12px;
@@ -1007,10 +923,7 @@ span.psw {
 #offers {
     margin: -10px -48px 5px -11px;
 }
-#display .products {
-    
-    /* margin-left: 105px; */
-}
+
 #banner {
     padding: 0 34px 0 20px;
     height: 26vh;
@@ -1181,6 +1094,23 @@ span.psw {
     grid-template-columns: 1fr;
     column-gap: 5px;
 }
+#prodetails {
+    display: initial;
+    margin-top: 70px;
+    
+}
+#prodetails .singlepro-img {
+    width: 90%;
+    margin-right: 50px;
+    border: 1px solid #ece9e2;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#prodetails .singel-pro-details {
+    width: 90%;
+    margin-left: 9%;
+}
+
 
 #mainpicture {
     gap: 5px;
