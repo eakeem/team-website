@@ -1115,7 +1115,7 @@ span.psw {
 #mainpicture {
     gap: 5px;
     grid-template-columns: 1fr;
-   /*  margin: 35px 0px -74px 0px; */
+     margin: 35px 0px -74px -13px ;
     display: grid;
     flex-wrap: nowrap;
     justify-content: space-around;
