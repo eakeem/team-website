@@ -536,7 +536,7 @@ align-items: flex-start;
       margin-top: 40px;
     }
     .contact-card h3 {
-      color: red; /* Accent color */
+      color: #000; /* Accent color */
       font-weight: 700;
       margin-bottom: 20px;
     }
@@ -545,7 +545,7 @@ align-items: flex-start;
       padding: 12px;
     }
 .btn-submit {
-      background-color: red;
+      background-color:#369e62;
       border: none;
       border-radius: 8px;
       padding: 12px;
@@ -556,7 +556,7 @@ align-items: flex-start;
       transition: background-color 0.3s ease;
     }
     .btn-submit:hover {
-      background-color: rgb(238, 89, 89);
+      background-color: #04AA6D;
     }
     .contact-info {
       margin-top: 20px;
@@ -1146,7 +1146,7 @@ span.psw {
 #pm-banner {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 39px;
+    gap: 33px;
 }
 .banner-box4 {
     padding: 0 144px 0 31px;
@@ -1235,6 +1235,12 @@ footer img {
 b, strong {
     font-weight: bolder;
     display: none;
+}
+#sm-banner h4 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 30px;
 }
 }
 
