@@ -801,6 +801,12 @@ b{
   background-color: #f44336;
   border: none;
 }
+.rounded-circle {
+    border-radius:5% !important;
+    max-width: 100%;
+    height: 70%;
+    
+}
 
 /* Center the image and position the close button */
 /* .imgcontainer {
@@ -1124,6 +1130,7 @@ span.psw {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-left: 4px;
 }
 
 #banner h2, #banner2 h2 {
@@ -1139,7 +1146,7 @@ span.psw {
 #pm-banner {
     display: grid;
     grid-template-columns: 50% 50%;
-    gap: 24px;
+    gap: 39px;
 }
 .banner-box4 {
     padding: 0 144px 0 31px;
@@ -1168,7 +1175,7 @@ span.psw {
 }
 #banner {
     
-    width: 100%;
+    width: 102% !important;
     height: 16vh !important;
    
 }
@@ -1191,13 +1198,43 @@ span.psw {
     padding-left: 30px;
 }
 .section-p1 {
-    padding: 10px 36px 0px 13px !important;
+    padding: 10px 14px 0px 13px !important;
 }
 #banner h4, #banner2 h4 {
     font-size: 10px;
     letter-spacing: 1em;
     text-align: center;
     color: white;
+}
+#pm-banner button {
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid;
+    transition: 10ms ease-in;
+    display: none;
+}
+#pm-banner span {
+    
+    display: none;
+   
+  
+}
+#banner button, #banner2 button {
+    margin-bottom: 14px;
+}
+#banner8 {
+    
+    width: 100% !important;
+    height: 17vh !important;
+  
+}
+footer img {
+    height: 50px;
+    display: none;
+}
+b, strong {
+    font-weight: bolder;
+    display: none;
 }
 }
 
